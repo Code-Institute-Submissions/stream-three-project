@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load bootstrap_tags %}
+{% block content %}
+
+    <!-- Details on the Painting of The Giraffe -->
+    <div class="container-fluid">
+        <div class="col-sm-12">
+            <div class="painting-header">
+                <h1>Mother's Nature</h1>
+            </div>
+        </div>
+
+        <div class="col-sm-12">
+            <div class="col-sm-8">
+                <div class="site-text">
+                    <p>There are two things that I hold very dear: the elegance of my country’s
+                        nature and my family.  It was these two factors that led me to paint Mother’s
+                        Nature, which depicts both the physical and the emotional beauty of Africa’s wildlife.
+                        This painting stays true to one of my central themes through celebrating the
+                        exquisiteness of the giraffe’s form.  But, in protecting and grooming its young,
+                        the mother portrays an important part of my cherished familial connections.<br>
+                        <span class="pull-right"><i>-Keryn Mason</i></span>
+                    </p>
+                </div>
+
+                {% if user.is_authenticated %}
+                    <!-- If a user is logged in they can click through to the Purchase page -->
+                    <div class="site-text">
+                        <p>If you are interested in buying a print of this painting then please go to the
+                            <a class="forum-link" href="{% url 'products' %}">purchase</a> page.</p>
+                    </div>
+                {% else %}
+                    <!-- If a user has not yet Registered or Logged in they can do so here -->
+                    <div class="site-text">
+                        <p>If you are interested in buying a print of this painting then please
+                            <a class="forum-link" href="{% url 'register' %}">register</a> or
+                            <a class="forum-link" href="{% url 'login' %}">login</a> to our site.</p>
+                    </div>
+                {% endif %}
+
+                <button class="btn btn-primary pull-right pg-btns" onclick="location.href='/'">Back</button>
+            </div>
+
+            <div class="col-sm-4">
+                <img class="paintings" src="/static/images/giraffe-painting.jpg" alt="A Painting of a giraffe and her calf by Keryn Mason">
+            </div>
+        </div>
+    </div>
+    <!-- Details on the Painting of The Giraffe -->
+
+{% endblock %}

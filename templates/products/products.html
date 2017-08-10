@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="container-fluid">
+        <div class="col-sm-12">
+            <h1>Purchase a Painting</h1>
+        </div>
+        <div class="col-sm-12 site-text">
+            <p>Featured paintings are numbered and signed by Keryn Mason.  Mother's Nature and Valli M.
+                prints are limited to 250 copies, sized 24 x 36 inches.  Hamba Kahle Mandela prints are limited to
+                5 35 x 48 inch prints only.  Postage and packaging are not included in the total costs
+                listed on this site.  For more information, or further size options, please
+                <a class="contact-link" href="/templates/contact.html">contact us</a>.</p>
+        </div>
+        <div class="col-sm-12">
+            {% for product in products %}
+            <div class="col-sm-4">
+            <div class="product-box">
+                <h2>{{ product.name }}</h2>
+                {% if product.image %}
+                    <img class="product-pics" src="/media/{{ product.image }}">
+                {% endif %}
+                <h2>$ {{ product.price }}</h2>
+                <div class="paypal-button">{{ product.paypal_form.sandbox }}</div>
+            </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}

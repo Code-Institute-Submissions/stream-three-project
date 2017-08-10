@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load bootstrap_tags %}
+{% block content %}
+
+    <!-- Details on the Painting of Mandela -->
+    <div class="container-fluid">
+        <div class="col-sm-12">
+            <div class="painting-header">
+                <h1>Hamba Kahle Mandela</h1>
+            </div>
+        </div>
+
+        <div class="col-sm-12">
+            <div class="col-sm-8">
+                <div class="site-text">
+                    <p>Nelson Mandela inspired not only his home country of South Africa, but the entire world.
+                        He was an icon of love, peace, forgiveness, and change.  Because of this, his death
+                        stunned the world and cast a shadow that can only be erased by following his teachings.
+                        I began this portrait on the day of his funeral, the 15th of December 2014.  It represents
+                        my own respect for this incredible man, as well as the respect of the rest of the world.
+                        And, to pay tribute, ten percent of the sales from the original and prints will go the
+                        Nelson Mandela Children’s Hospital.<br>
+                        <span class="pull-right"><i>-Keryn Mason</i></span>
+                    </p>
+                </div>
+
+                {% if user.is_authenticated %}
+                    <!-- If a user is logged in they can click through to the Purchase page -->
+                    <div class="site-text">
+                        <p>If you are interested in buying a print of this painting then please go to the
+                            <a class="forum-link" href="{% url 'products' %}">purchase</a> page.</p>
+                    </div>
+                {% else %}
+                    <!-- If a user has not yet Registered or Logged in they can do so here -->
+                    <div class="site-text">
+                        <p>If you are interested in buying a print of this painting then please
+                            <a class="forum-link" href="{% url 'register' %}">register</a> or
+                            <a class="forum-link" href="{% url 'login' %}">login</a> to our site.</p>
+                    </div>
+                {% endif %}
+
+                <button class="btn btn-primary pull-right pg-btns" onclick="location.href='/'">Back</button>
+            </div>
+
+            <div class="col-sm-4">
+                <img class="paintings" src="/static/images/nelson-mandela.jpg" alt="A Painting of Nelson Mandela by Keryn Mason">
+            </div>
+        </div>
+    </div>
+    <!-- Details on the Painting of Mandela -->
+
+{% endblock %}

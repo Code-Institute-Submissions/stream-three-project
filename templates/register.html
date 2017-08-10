@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load bootstrap_tags %}
+{% block content %}
+
+    <!-- Register Form -->
+    <div class="container-fluid">
+        <form class="register-form" method="post" action="{% url 'register' %}">
+            <legend>Create an Account</legend>
+            {% csrf_token %}
+            {{ form | as_bootstrap }}
+            <div class="form-group">
+                <button class="btn btn-primary pg-btns">Create Account</button>
+            </div>
+        </form>
+    </div>
+    <!-- Register Form -->
+
+{% endblock %}

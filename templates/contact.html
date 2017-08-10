@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="container-fluid">
+        <div class="col-sm-12">
+            <h1>Contact Keryn</h1>
+        </div>
+
+        <div class="col-sm-12 site-text">
+
+            <!-- Contact Form -->
+            <div class="col-sm-3">
+                <h2>Get in Touch</h2>
+                <p class="contact-para">Fill out the form below and we will be in touch.</p>
+                <form class="contact-form">
+                    <label for="fName">Full Name:</label>
+                    <input id="fName" name="fullName" placeholder="Your name..">
+                    <label for="email">Email:</label>
+                    <input id="email" name="eMail" placeholder="Your email address..">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="Message" placeholder="Leave a message for us.."></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <!-- Contact Form -->
+
+            <!-- Contact Numbers -->
+            <div class="col-sm-3">
+                <h2>Call today</h2>
+                <p><b>Landline:</b>  +27 (0)41 795 5521<br><br>
+                    <b>Cell Phone:</b>  +27 (0)75 936 2155<br><br>
+                    <b>Email:</b>  keryn@artbykeryn.com<br><br>
+                    <b>Alt. Email:</b>  info@artbykeryn.com<br><br>
+                    <a href="https://facebook.com/" target="_blank">
+                        <span class="fa fa-facebook social-icons" style="padding-left: 13px; padding-right: 13px"></span>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank">
+                        <span class="fa fa-twitter social-icons"></span>
+                    </a>
+                    <a href="https://instagram.com/" target="_blank">
+                        <span class="fa fa-instagram social-icons"></span>
+                    </a>
+                    <a href="https://dribbble.com/" target="_blank">
+                        <span class="fa fa-dribbble social-icons"></span>
+                    </a>
+                </p>
+            </div>
+            <!-- Contact Numbers -->
+
+            <!-- Map -->
+            <div class="col-sm-6 map">
+                <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52933.75885930815!2d25.569600271107777!3d-33.98328762453633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e7ad2191d99b901%3A0x9826c48a0e7a65e8!2sWalmer%2C+Port+Elizabeth%2C+6065%2C+South+Africa!5e0!3m2!1sen!2suk!4v1501339214008" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- Map -->
+
+        </div>
+    </div>
+{% endblock %}

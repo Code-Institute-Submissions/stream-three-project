@@ -1,0 +1,307 @@
+/******** Site ********/
+
+h1, h3, h4, h6, a {
+    color: #ac855b;
+    font-family: 'Cinzel', Serif, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+h5 {
+    color: #43382b;
+    font-family: 'Cinzel', Serif, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2, legend, label {
+    color: white;
+    font-family: 'Cinzel', Serif, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+hr {
+    border-top: 1px solid #ac855b;
+}
+
+.nav>li>a:hover {
+    background: #ac855b !important;
+    color: white;
+}
+
+a:focus {
+    color: #43382b;
+}
+
+.site-text {
+    background: #ac855b;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+p {
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.pg-btns, .btn-primary {
+    background: #715e4a;
+    border-color: #43382b;
+    border-radius: 20px;
+    font-family: 'Cinzel', Serif, sans-serif;
+    font-weight: bold;
+}
+
+.pg-btns:hover, .btn-primary:hover {
+    background-color: #e6dacd !important;
+    border-color: #715e4a !important;
+    color: #715e4a !important;
+}
+
+.pg-btns:active, .btn-primary:hover {
+    background-color: #715e4a;
+    border-color: #e6dacd;
+    color: #715e4a;
+}
+
+.pg-btns:focus, .btn-primary:focus {
+    background-color: #43382b;
+    border-color: white;
+    color: white;
+}
+
+.alert-success {
+    font-family: 'Cinzel', Serif, sans-serif;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.masthead {
+    margin-top: 10px;
+}
+
+.paintings, .drawings, .product-pics {
+    border: solid 3px #ac855b;
+    height: 100%;
+    margin: 1px;
+    width: 100%;
+}
+
+/******** Home Page ********/
+
+.background {
+    background-attachment: fixed;
+    background-image: url("../images/zebras-in-africa.jpg");
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    position: relative;
+}
+
+.logo-img {
+    display: block;
+    margin: auto;
+    width: 900px;
+}
+
+.home-img {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.hover-effect:hover .home-img {
+    opacity: 0.3;
+}
+
+.hover-effect:hover .link-for-painting {
+    opacity: 1;
+}
+
+.painting-link {
+    transition: .5s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.link-for-painting {
+    background-color: #ac855b;
+    border-radius: 100px;
+    color: white;
+    font-size: 16px;
+    opacity: 0;
+    padding: 16px 32px;
+}
+
+.glyphicon {
+    color: white !important;
+}
+
+/******** About Page ********/
+
+.picture {
+    border: solid 3px white;
+    margin: 20px 20px 20px 90px;
+    width: 60%;
+}
+
+/******** Gallery Page ********/
+
+.top-margin {
+    margin-top: 15px;
+}
+
+.lioness {
+    margin-top: 20px;
+}
+
+.african-woman {
+    margin-top: 35px;
+}
+
+/******** Contact Page ********/
+
+.contact-para {
+    padding-bottom: 5px !important;
+}
+
+.contact-form {
+    padding-bottom: 10px;
+    padding-left: 50px !important;
+}
+
+textarea {
+    width: 195px;
+}
+
+.social-icons {
+    background-color: white !important;
+    border-radius: 10px;
+    color: #ac855b !important;
+    padding: 10px;
+}
+
+.map {
+    padding: 20px;
+}
+
+.map-responsive{
+    height: 10px;
+    overflow: hidden;
+    padding-bottom: 50%;
+    position: relative;
+}
+.map-responsive iframe{
+    border-radius: 10px;
+	height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/******** Register/Login Page ********/
+
+.register-form, .login-form {
+    background: #ac855b;
+    border-radius: 10px;
+    font-family: 'Cinzel', Serif, sans-serif;
+    padding: 50px;
+    text-align: center;
+}
+
+input {
+    font-weight: bold;
+    text-align: center;
+    opacity: 0.7;
+}
+
+/******** Forum Page ********/
+
+form {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.forum-link, .contact-link {
+    color: white !important;
+}
+
+.mce-ico {
+    color: #44392c;
+}
+
+.forum-table {
+    text-align: center;
+}
+
+.forum-box {
+    background: rgba(172, 133, 91, 0.77);
+    border: 1px solid #795548;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.forum-para {
+    padding: 0 !important;
+}
+
+.comment {
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.user-pic {
+    width: 50%;
+}
+
+.btn-default {
+    font-weight: bold;
+}
+
+.polls {
+    float: none;
+    margin: 0 auto;
+}
+
+.progress {
+    margin-bottom: 10px;
+    margin-top: 2px;
+}
+
+.progress-bar-info {
+    background-color: #5a3a2b;
+}
+
+/******** Profile Page ********/
+
+.lion-img {
+    border-radius: 10px;
+    margin-top: 9px;
+    width: 100%;
+}
+
+
+/******** Product Page ********/
+
+.product-box {
+    background: rgba(172, 133, 91, 0.59);
+    border: 1px solid #ac855b;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.paypal-button {
+    margin-bottom: 15px;
+    text-align: center;
+}

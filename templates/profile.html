@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="container-fluid">
+    <div class="col-sm-12">
+        <h1>Hi {{ user.first_name }}</h1>
+    </div>
+    <div class="col-sm-8 site-text">
+        <h2>Welcome to your profile page</h2>
+        <p>Now that you have signed up you may purchase a painting:</p>
+        <button class="btn btn-primary pg-btns"><a href="{% url 'products' %}">Buy A Painting</a></button>
+        <p>Now that you have signed up you have full access to our
+            <a class="forum-link" href="{% url 'forum' %}">art forum</a>.
+            We would love to hear from you.</p>
+        <p>You are logged in as {{ user.email }} </p>
+    </div>
+    <div class="col-sm-4">
+        <img class="lion-img"  src="/static/images/lion.png">
+    </div>
+    </div>
+{% endblock %}

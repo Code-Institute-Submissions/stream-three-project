@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load thread_extras %}
+{% block content %}
+
+    <div class="container-fluid">
+        <div class="col-sm-12">
+            <h1>{{ subject.name }}</h1>
+        </div>
+
+
+    <div class="col-md-12">
+        {% for thread in subject.threads.all %}
+            {% include "forum/thread_item.html" %}
+        {% endfor %}
+    {% if user.is_authenticated %}
+            <p>
+                <a href="{% url 'new_thread' subject.id %}" class="btn btn-primary">New Thread</a>
+                <a class="btn btn-primary" href="javascript:history.back()">Back</a>
+            </p>
+        {% endif %}
+    </div>
+    </div>
+
+{% endblock %}

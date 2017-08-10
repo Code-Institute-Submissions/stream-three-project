@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <!-- Logo and Background Image -->
+    <div class="container-fluid background">
+        <img class="logo-img" src="../static/images/keryn-mason-sig-logo.png">
+    </div>
+    <!-- Logo and Background Image -->
+    <hr>
+    <!-- About Site -->
+    <div class="container-fluid">
+        <div class="col-sm-12">
+            <h1>About Site</h1>
+        </div>
+        <div class="col-sm-12 site-text">
+            <p>Keryn Mason is a South African artist known for her unique style, which drapes a layer of
+                fantasy over subjects of realism.  The result is a collection of paintings that fall somewhere
+                in between magical realism and photographic precision.  A lover of the natural spectacle
+                offered by her homeland of South Africa, Keryn’s works often feature wildlife and nature,
+                but branch out to cover other subjects, such as portraits and abstract works, on occasion.
+                <br><br>
+                This site allows you to view and purchase Keryn’s works.  You are also invited to visit the
+                forum in order to discuss Keryn’s works as well as participate in general discussions about
+                art and other artists.  However, in order for us to monitor the forum content and ensure that
+                your purchases are completed securely, we do ask you to register and sign in before you can
+                enjoy these features.</p>
+        </div>
+    </div>
+    <!-- About Site -->
+    <hr>
+    <!-- Main Paintings -->
+    <div class="container-fluid">
+        <div class="col-sm-12">
+            <h1>Latest Paintings</h1>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="col-sm-12">
+            <div class="col-sm-4 hover-effect">
+                <img class="home-img paintings" src="../static/images/nelson-mandela.jpg">
+                <div class="painting-link">
+                    <div class="link-for-painting">
+                        <a href="{% url 'madiba' %}"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 hover-effect">
+                <img class="home-img paintings" src="../static/images/elephant-painting.jpg">
+                <div class="painting-link">
+                    <div class="link-for-painting">
+                        <a href="{% url 'vallim' %}"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 hover-effect">
+                <img class="home-img paintings" src="../static/images/giraffe-painting.jpg">
+                <div class="painting-link">
+                    <div class="link-for-painting">
+                        <a href="{% url 'giraffe' %}"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Paintings -->
+{% endblock %}
