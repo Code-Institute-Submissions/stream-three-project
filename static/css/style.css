@@ -23,6 +23,7 @@ h2, legend, label {
 
 hr {
     border-top: 1px solid #ac855b;
+    margin-bottom: 10px;
 }
 
 .nav>li>a:hover {
