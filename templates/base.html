@@ -31,6 +31,7 @@
        <ul class="nav nav-pills navbar-right">
            {% if user.is_authenticated %}
                <li><a href="/products">Purchase</a></li>
+               <li><a href="/subscribe/">Subscribe</a></li>
            <li><a href="/forum/">Forum</a></li>
            <li><a href="{% url 'profile' %}">Profile</a></li>
            <li><a href="{% url 'logout' %}">Log Out</a></li>

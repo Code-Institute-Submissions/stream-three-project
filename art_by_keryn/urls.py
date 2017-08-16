@@ -24,6 +24,7 @@ from paypal_store import views as paypal_views
 from products import views as product_views
 from django.views.static import serve
 from .settings import MEDIA_ROOT
+from postcards import views as postcard_views
 
 
 urlpatterns = [
@@ -57,6 +58,8 @@ urlpatterns = [
     url(r'^paypal-cancel', paypal_views.paypal_cancel),
     url(r'^products/$', product_views.all_products, name='products'),
     url(r'^media/(?P<path>.*)$', serve, {'document_root': MEDIA_ROOT}),
+    # Subscription URL
+    url(r'^subscribe', postcard_views.all_postcards, name='subscribe'),
 ]
 
 

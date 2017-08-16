@@ -25,16 +25,15 @@ SECRET_KEY = '^*-6@k+m0ri=l_3-u#pl_1bw_g6-dva_@@b!uz2rj#w0v%oo1^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'http://f6d86620.ngrok.io']
 
 # PayPal Settings
 SITE_URL = 'http://127.0.0.1:8000'
-PAYPAL_NOTIFY_URL = 'http://127.0.0.1/a-very-hard-to-guess-url/'
+PAYPAL_NOTIFY_URL = 'http://f6d86620.ngrok.io/a-very-hard-to-guess-url/'
 PAYPAL_RECEIVER_EMAIL = 'nicole-merchant@gmail.com'
 
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -53,6 +52,7 @@ INSTALLED_APPS = [
     'paypal.standard.ipn',
     'paypal_store',
     'products',
+    'postcards',
 ]
 
 INTERNAL_IPS = ('127.0.0.1',)

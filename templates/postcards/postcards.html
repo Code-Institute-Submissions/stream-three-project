@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load postcard_extras %}
+{% block content %}
+
+    <div class="container-fluid">
+        <div class="col-sm-12">
+            <h1>Subscribe to a Monthly Postcard or Print</h1>
+        </div>
+        <div class="col-sm-12 site-text">
+            <p>If you would like to subscribe to get a monthly post card then subscribe below:</p>
+        </div>
+
+
+            {% for postcard in postcards %}
+
+                <div class="col-sm-12 product-box">
+                    <div class="col-sm-4">
+                        <h2>{{ postcard.name }}</h2>
+                        <p>{{ postcard.description }}</p>
+                    </div>
+
+                    <div class="col-sm-4">
+                        {% if postcard.image %}
+                            <div class="col-sm-6">
+                                <img class="product-pics" src="/media/{{ postcard.image }}">
+                            </div>
+                            <div class="col-sm-6">
+                                <img class="product-pics" src="/media/{{ postcard.imageTwo }}">
+                            </div>
+                        {% endif %}
+                    </div>
+
+                    <div class="col-sm-4">
+                        <h2>$ {{ postcard.price }}</h2>
+                        <div>{% paypal_form_for postcard user %}</div>
+                    </div>
+                </div>
+
+            {% endfor %}
+    </div>
+
+{% endblock %}

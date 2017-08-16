@@ -28,7 +28,15 @@ class AccountUserManager(UserManager):
 
 
 class User(AbstractUser):
-    # now that we've abstracted this class we can add any
-    # number of custom attribute to our user class
-
     objects = AccountUserManager()
+
+    def is_subscribed(self, postcard):
+        try:
+            purchase = self.purchases.get(postcard__pk=postcard.pk)
+        except Exception:
+            return False
+
+        if purchase.subscription_end > timezone.now():
+            return False
+
+        return True
