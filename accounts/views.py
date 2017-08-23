@@ -22,7 +22,7 @@ def register(request):
                 return redirect(reverse('profile'))
 
             else:
-                messages.error(request, "Sorry, you are unable to log you in at this time.")
+                messages.error(request, "Sorry, you are unable to log in at this time.")
 
     else:
         form = UserRegistrationForm()
@@ -61,5 +61,5 @@ def login(request):
 
 def logout(request):
     auth.logout(request)
-    messages.success(request, 'Thanks for visiting our site today.  You have successfully logged out')
+    messages.success(request, 'You have successfully logged out. Hope to see you again soon!')
     return redirect(reverse('index'))

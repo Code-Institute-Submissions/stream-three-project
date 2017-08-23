@@ -2,20 +2,62 @@
 {% block content %}
 
     <div class="container-fluid">
-    <div class="col-sm-12">
-        <h1>Hi {{ user.first_name }}</h1>
+        <div class="col-sm-12">
+            <h1>Hi {{ user.first_name }}</h1>
+        </div>
+        <div class="col-sm-8 site-text">
+            <h2>Welcome to Art by Keryn</h2>
+            <p>Now that you are logged in there is so much for you to do.  Select an option below to see more details:</p>
+
+            <div class="panel-group" id="accordion" role="tablist">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="paintings">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-controls="collapseOne">Purchase a Painting</a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="paintings">
+                        <div class="panel-body">
+                            Now that you have signed up you have access to purchase prints of Keryn's paintings.
+                            <br><br>
+                            <a class="btn btn-primary pg-btns" href="{% url 'products' %}">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="postcards">
+                        <h4 class="panel-title">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Subscribe to Art</a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="postcards">
+                        <div class="panel-body">
+                            Subscribe to our postcards or prints which will entitle you to new art from Keryn each month.
+                            <br><br>
+                            <a class="btn btn-primary pg-btns" href="{% url 'subscribe' %}">Subscribe</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="forum">
+                        <h4 class="panel-title">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false"  aria-controls="collapseThree">Visit the Forum</a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="forum">
+                        <div class="panel-body">
+                            Visit our forum to express your passion for art, ask advice, and meet other art fans who share your passion.
+                            <br><br>
+                            <a class="btn btn-primary pg-btns" href="{% url 'forum' %}">Visit Forum</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <img class="lion-img"  src="/static/images/lion.png">
+        </div>
     </div>
-    <div class="col-sm-8 site-text">
-        <h2>Welcome to your profile page</h2>
-        <p>Now that you have signed up you may purchase a painting:</p>
-        <button class="btn btn-primary pg-btns"><a href="{% url 'products' %}">Buy A Painting</a></button>
-        <p>Now that you have signed up you have full access to our
-            <a class="forum-link" href="{% url 'forum' %}">art forum</a>.
-            We would love to hear from you.</p>
-        <p>You are logged in as {{ user.email }} </p>
-    </div>
-    <div class="col-sm-4">
-        <img class="lion-img"  src="/static/images/lion.png">
-    </div>
-    </div>
+
 {% endblock %}

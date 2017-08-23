@@ -35,6 +35,11 @@ a:focus {
     color: #43382b;
 }
 
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 .site-text {
     background: #ac855b;
     border-radius: 10px;
@@ -79,6 +84,10 @@ p {
     margin-left: 100px;
     margin-right: 100px;
     text-align: center;
+}
+
+.alert-danger {
+    font-weight: bold;
 }
 
 .masthead {
@@ -168,6 +177,42 @@ p {
     margin-top: 35px;
 }
 
+.hover {
+    height: auto;
+    width: 100%;
+}
+
+.overlay {
+    background-color: #ac855b;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .5s ease;
+    width: 100%;
+}
+
+.on-hover:hover .overlay {
+    opacity: 0.9;
+}
+
+.image-details {
+    color: white;
+    font-family: 'Cinzel', Serif, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
 /******** Contact Page ********/
 
 .contact-para {
@@ -219,6 +264,11 @@ textarea {
     text-align: center;
 }
 
+.form-control {
+    display: inline;
+    width: 60%;
+}
+
 input {
     font-weight: bold;
     text-align: center;
@@ -255,14 +305,25 @@ form {
     padding: 0 !important;
 }
 
+.forum-paragraphs {
+    font-weight: bold;
+    padding: 2px;
+}
+
 .comment {
-    border: 1px solid white;
-    border-radius: 10px;
-    margin: 5px;
+    border-bottom: 1px solid white;
+    margin-bottom: 5px;
 }
 
 .user-pic {
-    width: 50%;
+    width: 100%;
+}
+
+.comment-profile {
+    border: 1px solid #715e4a;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 0;
 }
 
 .btn-default {
@@ -283,6 +344,18 @@ form {
     background-color: #5a3a2b;
 }
 
+.table>tbody>tr>th {
+    text-align: center;
+}
+
+.table>tbody>tr>td {
+    text-align: center;
+}
+
+.subject-name {
+    color: white;
+}
+
 /******** Profile Page ********/
 
 .lion-img {
@@ -291,11 +364,21 @@ form {
     width: 100%;
 }
 
+.panel-body {
+    background: rgba(172, 133, 91, 0.85);
+    color: #fff;
+    text-align: center;
+}
+
+.panel-title>a {
+    color: #5a3a2b;
+}
+
 
 /******** Product Page ********/
 
 .product-box {
-    background: rgba(172, 133, 91, 0.59);
+    background: rgba(172, 133, 91, 0.85);
     border: 1px solid #ac855b;
     border-radius: 10px;
     margin-top: 10px;
@@ -303,6 +386,155 @@ form {
 }
 
 .paypal-button {
+    font-weight: bold;
     margin-bottom: 15px;
     text-align: center;
+}
+
+/******** Subscribe Page ********/
+.subscribe-button {
+    justify-content: center;
+}
+
+
+/************** Media Query **************/
+
+/******** Site ********/
+.navbar-toggle {
+    background-color: #ac855b;
+    border: 1px solid #795548;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+
+span {
+    color: white !important;
+}
+
+/******** Responsive Design for Mobile ********/
+
+@media only screen and (max-width: 40em){
+    /*** Site ***/
+    h1 {
+        font-size: x-large;
+    }
+
+    h2 {
+        font-size: large;
+        padding-top: 5px;
+    }
+
+    p {
+        padding: 5px;
+    }
+
+    .alert-success {
+        margin: 1px;
+    }
+
+    .alert {
+        margin-bottom: 1px;
+    }
+
+    .navbar-toggle .icon-bar+.icon-bar {
+        background: white;
+        margin-top: 4px;
+    }
+
+    .navbar-toggle .icon-bar {
+        background: white;
+        margin-top: 4px;
+    }
+
+    /*** Home Page ***/
+    .link-for-painting {
+        padding: 5px 15px;
+    }
+
+    .latest-paintings {
+        padding: 0;
+    }
+
+    .hover-effect {
+        margin-bottom: 5px;
+    }
+
+    .painting-description {
+        padding-bottom: 25px;
+    }
+
+    /*** About Page ***/
+    .picture {
+        border: solid 2px white;
+        margin: 5px;
+        width: 100%;
+    }
+
+    /*** Contact Page ***/
+    .contact-form {
+        padding: 0 !important;
+    }
+
+    .map {
+        padding: 5px;
+    }
+
+    /*** Gallery Page ***/
+    .paintings .drawings {
+        margin: 5px !important;
+    }
+
+    .col-sm-6 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /*** Register and Login Pages ***/
+    legend {
+        font-size: medium;
+    }
+
+    form {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+    .login-form {
+        padding-top: 10px;
+    }
+
+    /*** Purchase Page ***/
+    .col-sm-12 {
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+    .product-padding {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /*** Forum Pages ***/
+
+    .table>tbody>tr>th {
+        font-size: x-small;
+        text-align: center;
+    }
+
+    .table>tbody>tr>td {
+        font-size: xx-small;
+        text-align: center;
+    }
+
+    .forum-paragraphs {
+        padding: 2px !important;
+    }
+
+    .user-pic {
+        width: 100%;
+    }
 }

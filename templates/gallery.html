@@ -2,38 +2,91 @@
 {% block content %}
 
     <div class="container-fluid">
+
+        <!--
+         To get an overlay on the images I used the following link:
+         https://www.w3schools.com/howto/howto_css_image_overlay.asp
+         -->
         <!-- All Paintings -->
         <div class="col-sm-12">
             <h1>Paintings</h1>
-            <div class="col-sm-4">
-                <img class="paintings" src="/static/images/elephant-painting.jpg" alt="Painting of An Elephant">
+            <div class="col-sm-4 on-hover">
+                <img class="paintings hover" src="/static/images/elephant-painting.jpg" alt="Painting of An Elephant">
+                <div class="overlay">
+                    <div class="image-details">
+                        Valli M. his early years at Addo<br><br>
+                        2015
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-4">
-                <img class="paintings top-margin" src="/static/images/zebra-painting.jpg" alt="Painting of a Zebra">
+            <div class="col-sm-4 on-hover">
+                <img class="paintings top-margin hover" src="/static/images/zebra-painting.jpg" alt="Painting of a Zebra">
+                <div class="overlay">
+                    <div class="image-details">
+                        The Beauty of Nature<br><br>
+                        2000
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-4">
-                <img class="paintings" src="/static/images/giraffe-painting.jpg" alt="Painting of Giraffe and Calf">
+            <div class="col-sm-4 on-hover">
+                <img class="paintings hover" src="/static/images/giraffe-painting.jpg" alt="Painting of Giraffe and Calf">
+                <div class="overlay">
+                    <div class="image-details">
+                        Mother's Nature<br><br>
+                        2015
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="col-sm-12">
-            <div class="col-sm-6">
-                <img class="paintings top-margin" src="/static/images/leopard-painting.jpg" alt="Painting of a Leopard">
+            <div class="col-sm-6 on-hover">
+                <img class="paintings top-margin hover" src="/static/images/leopard-painting.jpg" alt="Painting of a Leopard">
+                <div class="overlay">
+                    <div class="image-details">
+                        The Gazing Leopard<br><br>
+                        2010
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-6">
-                <img class="paintings lioness" src="/static/images/lioness-cub-painting.jpg" alt="Painting of a Lioness and Cub">
+            <div class="col-sm-6 on-hover">
+                <img class="paintings lioness hover" src="/static/images/lioness-cub-painting.jpg" alt="Painting of a Lioness and Cub">
+                <div class="overlay">
+                    <div class="image-details">
+                        Like Mother, Like Child<br><br>
+                        2004
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="col-sm-12">
-            <div class="col-sm-4">
-                <img class="paintings top-margin" src="/static/images/my-lady-painting.jpg" alt="Painting of a Woman">
+            <div class="col-sm-4 on-hover">
+                <img class="paintings top-margin hover" src="/static/images/my-lady-painting.jpg" alt="Painting of a Woman">
+                <div class="overlay">
+                    <div class="image-details">
+                        My Lady<br><br>
+                        2006
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-4">
-                <img class="paintings african-woman" src="/static/images/african-woman.jpg" alt="Painting of an African Woman">
+            <div class="col-sm-4 on-hover">
+                <img class="paintings african-woman hover" src="/static/images/african-woman.jpg" alt="Painting of an African Woman">
+                <div class="overlay">
+                    <div class="image-details">
+                        Look into Her Eyes<br><br>
+                        2008
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-4">
-                <img class="paintings top-margin" src="/static/images/nelson-mandela.jpg" alt="Painting of Nelson Mandela">
+            <div class="col-sm-4 on-hover">
+                <img class="paintings top-margin hover" src="/static/images/nelson-mandela.jpg" alt="Painting of Nelson Mandela">
+                <div class="overlay">
+                    <div class="image-details">
+                        Hamba Kahle Nelson Mandela<br><br>
+                        2016
+                    </div>
+                </div>
             </div>
         </div>
         <!-- All Paintings -->
@@ -41,27 +94,83 @@
         <!-- All Drawings -->
         <div class="col-sm-12">
             <h1>Drawings</h1>
-            <div class="col-sm-6">
-                <img class="drawings top-margin" src="/static/images/leopard-drawing.jpg" alt="Drawing of a Leopard">
+            <div class="col-sm-6 on-hover">
+                <img class="drawings top-margin hover" src="/static/images/leopard-drawing.jpg" alt="Drawing of a Leopard">
+                <div class="overlay">
+                    <div class="image-details">
+                        Remain Fierce<br><br>
+                        2007
+                    </div>
+                </div>
             </div>
 
             <div class="col-sm-6" style="margin-top: 40px">
-                <div class="col-sm-6"><img class="drawings top-margin" src="/static/images/african-women.jpg" alt="Drawing of African Women"></div>
-                <div class="col-sm-6"><img class="drawings top-margin" src="/static/images/lion-drawing1.jpg" alt="Drawing of Lion"></div>
-                <div class="col-sm-6"><img class="drawings top-margin" src="/static/images/ship-drawing.jpg" alt="Drawing of a Ship"></div>
-                <div class="col-sm-6"><img class="drawings top-margin" src="/static/images/zebra-drawing.jpg" alt="Drawing of a Zebra"></div>
+                <div class="col-sm-6 on-hover">
+                    <img class="drawings top-margin hover" src="/static/images/african-women.jpg" alt="Drawing of African Women">
+                    <div class="overlay">
+                        <div class="image-details">
+                            African Life<br><br>
+                            1995
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 on-hover">
+                    <img class="drawings top-margin hover" src="/static/images/lion-drawing1.jpg" alt="Drawing of Lion">
+                    <div class="overlay">
+                        <div class="image-details">
+                            The King<br><br>
+                            1999
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 on-hover">
+                    <img class="drawings top-margin hover" src="/static/images/ship-drawing.jpg" alt="Drawing of a Ship">
+                    <div class="overlay">
+                        <div class="image-details">
+                            The Storm<br><br>
+                            2001
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 on-hover">
+                    <img class="drawings top-margin hover" src="/static/images/zebra-drawing.jpg" alt="Drawing of a Zebra">
+                    <div class="overlay">
+                        <div class="image-details">
+                            Humble Life<br><br>
+                            2003
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="col-sm-12">
-            <div class="col-sm-4">
-                <img class="drawings top-margin" src="/static/images/lion-drawing2.jpg" alt="Drawing of a Lion">
+            <div class="col-sm-4 on-hover">
+                <img class="drawings top-margin hover" src="/static/images/lion-drawing2.jpg" alt="Drawing of a Lion">
+                <div class="overlay">
+                    <div class="image-details">
+                        Hlokomela<br><br>
+                        1994
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-4">
-                <img class="drawings top-margin" src="/static/images/elephant-drawing.jpg" alt="Drawing of an Elephant">
+            <div class="col-sm-4 on-hover">
+                <img class="drawings top-margin hover" src="/static/images/elephant-drawing.jpg" alt="Drawing of an Elephant">
+                <div class="overlay">
+                    <div class="image-details">
+                        Be Strong<br><br>
+                        2008
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-4">
-                <img class="drawings top-margin" src="/static/images/leopard-drawing2.jpg" alt="Drawing of Leopard Cub">
+            <div class="col-sm-4 on-hover">
+                <img class="drawings top-margin hover" src="/static/images/leopard-drawing2.jpg" alt="Drawing of Leopard Cub">
+                <div class="overlay">
+                    <div class="image-details">
+                        The Cub<br><br>
+                        2012
+                    </div>
+                </div>
             </div>
         </div>
     </div>
