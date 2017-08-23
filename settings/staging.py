@@ -9,7 +9,8 @@ DATABASES = {
     }
 }
 
+SITE_URL = 'art-by-keryn.herokuapp.com'
+
 # PayPal environment variables
-SITE_URL = ''
-PAYPAL_NOTIFY_URL = ''
+PAYPAL_NOTIFY_URL = 'art-by-keryn.herokuapp.com/a-very-hard-to-guess-url/'
 PAYPAL_RECEIVER_EMAIL = 'nicole-merchant2@gmail.com'
