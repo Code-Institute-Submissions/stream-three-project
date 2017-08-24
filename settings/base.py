@@ -9,7 +9,7 @@ SECRET_KEY = '^*-6@k+m0ri=l_3-u#pl_1bw_g6-dva_@@b!uz2rj#w0v%oo1^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'http://f6d86620.ngrok.io', 'art-by-keryn.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', u'localhost:8000', 'http://f6d86620.ngrok.io', 'art-by-keryn.herokuapp.com']
 SITE_ID = 2
 
 # Application definition

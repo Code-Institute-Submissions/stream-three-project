@@ -23,7 +23,7 @@ from paypal.standard.ipn import urls as paypal_urls
 from paypal_store import views as paypal_views
 from products import views as product_views
 from django.views.static import serve
-from .settings import MEDIA_ROOT
+from settings.base import MEDIA_ROOT
 from postcards import views as postcard_views
 
 
