@@ -1,1 +1,0 @@
-web: gunicorn art_by_keryn.wsgi:application
