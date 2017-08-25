@@ -34,6 +34,7 @@ urlpatterns = [
     url(r'^about/', home_views.get_about, name='about'),
     url(r'^contact/', home_views.get_contact, name='contact'),
     url(r'^gallery/', home_views.get_gallery, name='gallery'),
+    url(r'^privacy-policy', home_views.get_terms_of_service, name='privacy-policy'),
     # Painting URLs
     url(r'^nelson-mandela/', home_views.get_madiba, name='madiba'),
     url(r'^mothers-nature/', home_views.get_giraffe, name='giraffe'),

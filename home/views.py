@@ -37,3 +37,8 @@ def get_giraffe(request):
 # View for Elephant Page
 def get_elephant(request):
     return render(request, 'vallim-elephant.html')
+
+
+# View for Terms of Service
+def get_terms_of_service(request):
+    return render(request, 'privacy-policy.html')
