@@ -49,24 +49,4 @@
         <!-- Create a new thread and/or poll -->
     </div>
 
-    <!-- Script for making a poll visible -->
-    <script>
-        $(function() {
-            if (!$('#id_is_a_poll').is('checked')) {
-                $('#poll_form').hide()
-            }
-
-            $('#id_is_a_poll').click(function(el) {
-                var poll_form = $('#poll_form')
-
-                if (poll_form.is(":visible")) {
-                    poll_form.hide()
-                } else {
-                    poll_form.show()
-                }
-            })
-        })
-    </script>
-    <!-- Script for making a poll visible -->
-
 {% endblock %}
