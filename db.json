@@ -1317,24 +1317,6 @@
 },
 {
     "model": "admin.logentry",
-    "pk": 32,
-    "fields": {
-        "action_time": "2017-08-07T14:47:30.505Z",
-        "user": [
-            "nicole"
-        ],
-        "content_type": [
-            "subscriptions",
-            "subscription"
-        ],
-        "object_id": "1",
-        "object_repr": "hey",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
     "pk": 33,
     "fields": {
         "action_time": "2017-08-07T14:48:00.024Z",
