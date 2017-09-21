@@ -18,7 +18,7 @@
             <div class="product-box">
                 <h2>{{ product.name }}</h2>
                 {% if product.image %}
-                    <img class="product-pics" src="/media/{{ product.image }}">
+                    <img class="product-pics" alt="Paintings to Purchase" src="/media/{{ product.image }}">
                 {% endif %}
                 <h2>$ {{ product.price }}</h2>
                 <div class="paypal-button">{{ product.paypal_form.sandbox }}</div>
